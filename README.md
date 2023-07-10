@@ -1,5 +1,3 @@
-# goit-node.js-hw-01-CLI-app
-
 # Отримуємо і виводимо весь список контактів у вигляді таблиці (console.table)
 node index.js --action="list"
 
