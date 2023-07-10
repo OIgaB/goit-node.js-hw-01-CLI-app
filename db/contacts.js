@@ -41,7 +41,7 @@ async function removeContact(contactId) {
 
 
 // Повертає об'єкт доданого контакту
-async function addContact(name, email, phone) { 
+async function addContact({ name, email, phone }) { 
     const contacts = await listContacts(); //отримуємо масив контактів
     const newContact = {
         id: nanoid(),

@@ -1,13 +1,13 @@
 import yargs from 'yargs';  // ES-6-ті модулі 
 // const argv = require('yargs').argv;   // Common.js
-import contactsService from './db/contacts'; 
+import contactsService from './db/contacts.js'; 
 
 
 async function invokeAction({ action, id, name, email, phone }) {
   switch (action) {
     case 'list':
       const allContacts = await contactsService.listContacts();
-      console.log(allContacts);
+      console.table(allContacts);
       break;
 
     case 'get':
