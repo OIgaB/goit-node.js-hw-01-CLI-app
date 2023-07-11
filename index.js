@@ -1,6 +1,6 @@
 import yargs from 'yargs';  // ES-6-ті модулі 
 // const argv = require('yargs').argv;   // Common.js
-import contactsService from './db/contacts.js'; 
+import contactsService from './contacts.js'; 
 
 
 async function invokeAction({ action, id, name, email, phone }) {
